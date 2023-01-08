@@ -1,7 +1,7 @@
-interface Duck {
+export interface Duck {
     name : string;
     numLegs: number;
-    makeSound?: (sound: string)=> void; // optional
+    makeSound: (sound: string)=> void; // optional
 }
 
 const duck1: Duck = {
@@ -18,4 +18,4 @@ const duck2: Duck ={
 
 duck1.makeSound!("quack")
 
-export{}
+export const ducks =[duck1, duck2]
